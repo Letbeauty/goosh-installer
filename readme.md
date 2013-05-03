@@ -42,8 +42,15 @@ INSTALLATION(安装说明)
 添加
     EDITOR="/usr/bin/vim"
     
-然后执行shell文件就好了。末尾的时候需要你保存一下文件 默认即可
+然后执行shell文件就好了。末尾的时候需要你配置一下文件 
     ./goosh.sh
+只需要改下面的配置就可以了
+
+    goosh.config.user = "guest";  #这个改成你喜欢的
+    goosh.config.host = "goosh.org"; #这个改成你的域名或者其他
+    goosh.config.mode = "web"; #这个随意改下或者默认也ok
+    
+配置完成后保存即可
     
 最后需你将生成index.php文件拷贝到 apache目录下
 
