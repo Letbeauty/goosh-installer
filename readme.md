@@ -43,7 +43,9 @@ INSTALLATION(安装说明)
     EDITOR="/usr/bin/vim"
     
 然后执行shell文件就好了。末尾的时候需要你配置一下文件 
+
     ./goosh.sh
+    
 只需要改下面的配置就可以了
 
     goosh.config.user = "guest";  #这个改成你喜欢的
@@ -56,6 +58,7 @@ INSTALLATION(安装说明)
 
     mkdir /var/www/goosh
     cp /root/goosh/index.php /var/www/goosh
+    
 最后重启下apache
 
     service httpd restart
