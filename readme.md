@@ -11,6 +11,8 @@ your web server.
 Please keep in mind that this script is meant to be run under Debian
 based distributions, such as Debian itself, Ubuntu or similar.
 
+注意重点这个shell只是用于 Debian 或者 Ubuntu 系统
+
 DEPENDENCIES
 ------------
 
@@ -21,12 +23,34 @@ BUGS
 
 No known bugs. But if you find one, please report them. Patches welcome! :)
 
-INSTALLATION
+INSTALLATION(安装说明)
 ------------
+首先需要安装PHP 
 
-    wget "https://raw.github.com/tolecnal/goosh-installer/master/goosh.sh" (to your home directory)
+    apt-get install php5-common libapache2-mod-php5 php5-cli
+    
+然后下载shell
+
+    wget https://raw.github.com/tolecnal/goosh-installer/master/goosh.sh
     chmod u+x goosh.sh
+    
+安装之前需要设定下你的编辑器目录 默认的Vim目录是 /usr/bin/vim 
+
+然后编辑这个shell文件  
+
+    vim googsh.sh
+添加
+    EDITOR="/usr/bin/vim"
+    
+然后执行shell文件就好了。末尾的时候需要你保存一下文件 默认即可
     ./goosh.sh
+    
+最后需你将生成index.php文件拷贝到 apache目录下
+
+    mkdir /var/www/goosh
+    cp /root/goosh/index.php /var/www/goosh
+    
+这样就完成了~
 
 Then follow the on screen instructions
 
@@ -41,3 +65,4 @@ ABOUT THE AUTHOR
 
 Author: Jostein Elvaker Haande <tolecnal@tolecnal.net>
 Webpage: http://tolecnal.net
+翻译博客 www.teidihen.com
