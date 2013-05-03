@@ -39,7 +39,9 @@ INSTALLATION(安装说明)
 然后编辑这个shell文件  
 
     vim googsh.sh
+    
 添加
+
     EDITOR="/usr/bin/vim"
     
 然后执行shell文件就好了。末尾的时候需要你配置一下文件 
