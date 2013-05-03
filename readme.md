@@ -49,6 +49,9 @@ INSTALLATION(安装说明)
 
     mkdir /var/www/goosh
     cp /root/goosh/index.php /var/www/goosh
+最后重启下apache
+
+    service httpd restart
     
 这样就完成了~
 
